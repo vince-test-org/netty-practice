@@ -1,4 +1,4 @@
-package com.joebrothers;
+package com.joebrothers.echoserver;
 
 import java.net.InetSocketAddress;
 
@@ -43,6 +43,7 @@ public final class EchoServer {
                         }
                     });
             final ChannelFuture f = b.bind().sync();
+            System.out.println(EchoServer.class.getName() + " started and listening on " + f.channel().localAddress());
             f.channel().closeFuture().sync();
         } finally {
             group.shutdownGracefully().sync();

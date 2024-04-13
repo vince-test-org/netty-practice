@@ -1,4 +1,4 @@
 @NonNullByDefault
-package com.joebrothers;
+package com.joebrothers.echoclient;
 
 import com.joebrothers.annotation.NonNullByDefault;

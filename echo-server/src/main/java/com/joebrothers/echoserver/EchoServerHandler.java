@@ -1,4 +1,4 @@
-package com.joebrothers;
+package com.joebrothers.echoserver;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;

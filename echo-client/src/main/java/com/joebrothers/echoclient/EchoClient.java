@@ -1,4 +1,4 @@
-package com.joebrothers;
+package com.joebrothers.echoclient;
 
 import java.net.InetSocketAddress;
 
