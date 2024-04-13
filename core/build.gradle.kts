@@ -9,4 +9,5 @@ repositories {
 
 dependencies {
     implementation(libs.javax.annotation)
+    implementation(libs.findbugs)
 }

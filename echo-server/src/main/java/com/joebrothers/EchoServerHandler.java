@@ -1,16 +1,14 @@
 package com.joebrothers;
 
-import com.joebrothers.annotation.Nullable;
-
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
-import io.netty.channel.ChannelHandler;
+import io.netty.channel.ChannelHandler.Sharable;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.CharsetUtil;
 
-@ChannelHandler.Sharable
+@Sharable
 public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
@@ -24,7 +22,7 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelReadComplete(final ChannelHandlerContext ctx) throws Exception {
         ctx.writeAndFlush(Unpooled.EMPTY_BUFFER)
-                .addListener(ChannelFutureListener.CLOSE);
+           .addListener(ChannelFutureListener.CLOSE);
     }
 
     @Override
