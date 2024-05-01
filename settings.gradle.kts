@@ -13,5 +13,6 @@ plugins {
 rootProject.name = "netty-practice"
 include("core")
 include("chapter04-transport")
+include("chapter09-unit-testing")
 include("echo-client")
 include("echo-server")
